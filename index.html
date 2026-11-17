@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Renovar Salud Mental · Lic. Belén Kachuk, psicóloga en San Isidro</title>
+<meta name="description" content="Terapia psicológica online y presencial en San Isidro. Ansiedad, estrés, crisis personales y relaciones. Lic. Belén Kachuk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --lavanda:#EFEBF7;
+    --lavanda-media:#D9D1EC;
+    --berenjena:#33264D;
+    --brote:#7FA889;
+    --tinta:#231C30;
+    --gris:#5F5870;
+    --blanco:#FFFFFF;
+    --wpp:#1FA855;
+    --serif:"Lora",Georgia,serif;
+    --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--tinta);background:var(--blanco);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--brote);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  .boceto{background:var(--tinta);color:#fff;font-size:13px;text-align:center;padding:8px 16px}
+  .boceto strong{color:#B9D6C0;font-weight:600}
+
+  header{background:var(--lavanda)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px}
+  .marca{text-decoration:none;display:flex;align-items:center;gap:12px}
+  .marca svg{width:34px;height:34px;flex:none}
+  .marca b{display:block;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--berenjena);line-height:1}
+  .marca small{display:block;font-size:13px;color:var(--gris);margin-top:3px}
+  .nav ul{display:flex;gap:28px;list-style:none;font-size:15px}
+  .nav ul a{text-decoration:none;color:var(--gris)}
+  .nav ul a:hover{color:var(--berenjena)}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:16px;text-decoration:none;border-radius:999px;padding:15px 26px;white-space:nowrap;transition:background .15s}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn-wpp{background:var(--wpp);color:#fff}
+  .btn-wpp:hover{background:#178f48}
+  .btn-sec{color:var(--berenjena);text-decoration:underline;text-underline-offset:4px;padding-left:8px;padding-right:8px}
+  .btn-chico{padding:10px 18px;font-size:15px}
+
+  /* hero */
+  .hero{background:var(--lavanda);padding:56px 0 112px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.2vw,66px);line-height:1.08;letter-spacing:-.01em;color:var(--berenjena);max-width:15ch}
+  .hero p{font-size:20px;color:var(--gris);margin:24px 0 36px;max-width:44ch}
+  .acciones{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+  .modalidad{display:flex;gap:10px;margin-top:36px;flex-wrap:wrap}
+  .modalidad span{background:#fff;border-radius:999px;padding:6px 14px;font-size:14px;color:var(--berenjena)}
+
+  /* respiración: pieza central */
+  .respira{display:flex;flex-direction:column;align-items:center;gap:24px}
+  .circulo{position:relative;width:min(340px,80vw);aspect-ratio:1;display:grid;place-items:center}
+  .circulo::before,.circulo::after{content:"";position:absolute;inset:0;border-radius:50%}
+  .circulo::before{background:var(--lavanda-media);animation:respirar 10s ease-in-out infinite}
+  .circulo::after{inset:22%;background:var(--berenjena);animation:respirar 10s ease-in-out infinite reverse;opacity:.9}
+  .circulo span{position:relative;z-index:1;color:#fff;font-family:var(--serif);font-size:20px}
+  .circulo span i{font-style:normal;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);white-space:nowrap;animation:palabra 10s infinite}
+  .circulo span i+i{animation-delay:-5s}
+  @keyframes respirar{0%,100%{transform:scale(.72)}50%{transform:scale(1)}}
+  @keyframes palabra{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
+  .respira p{font-size:15px;color:var(--gris);text-align:center;max-width:28ch}
+
+  section{padding:104px 0}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4vw,44px);line-height:1.15;color:var(--berenjena);max-width:22ch}
+  .intro{font-size:19px;color:var(--gris);margin-top:16px;max-width:56ch}
+
+  /* temas */
+  .temas{margin-top:48px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px}
+  .temas div{padding:26px 0;border-top:1px solid #E4DFEE}
+  .temas h3{font-family:var(--serif);font-weight:500;font-size:24px;margin-bottom:6px;color:var(--tinta)}
+  .temas p{color:var(--gris);max-width:42ch}
+
+  /* sobre mí */
+  .sobre{background:var(--berenjena);color:#fff}
+  .sobre .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+  .foto{aspect-ratio:4/5;border-radius:50% 50% 24px 24px / 38% 38% 24px 24px;background:repeating-linear-gradient(135deg,#3F3060 0 14px,#3A2C59 14px 28px);display:flex;align-items:flex-end;justify-content:center;padding:28px;color:#C9BEE0;font-size:14px}
+  .sobre h2{color:#fff}
+  .sobre p{color:#DCD4EC;font-size:18px;margin-top:20px;max-width:52ch}
+  .firma{margin-top:32px;color:#C9BEE0;font-size:15px}
+  .firma b{display:block;font-family:var(--serif);font-weight:500;font-size:22px;color:#fff}
+
+  /* cómo empezar */
+  .pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px;counter-reset:p}
+  .pasos div{counter-increment:p}
+  .pasos div::before{content:counter(p);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--lavanda);color:var(--berenjena);font-family:var(--serif);font-weight:600;font-size:20px;margin-bottom:20px}
+  .pasos h3{font-family:var(--serif);font-weight:500;font-size:22px;margin-bottom:6px}
+  .pasos p{color:var(--gris)}
+
+  /* reseñas */
+  .resenas{background:var(--lavanda);padding:80px 0}
+  .resenas{padding:104px 0}
+  .cabecera{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+  .nota{font-family:var(--serif);font-size:88px;line-height:1;color:var(--berenjena);text-align:right}
+  .nota small{display:block;font-family:var(--sans);font-size:15px;color:var(--gris);margin-top:8px}
+  .citas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .citas blockquote{background:#fff;border-radius:24px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+  .citas p{font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--tinta)}
+  .citas footer{font-size:15px;color:var(--gris)}
+  .citas footer::before{content:"★★★★★";display:block;color:#D9A21B;letter-spacing:2px;margin-bottom:4px}
+
+  /* contacto */
+  .contacto .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .contacto dl{display:grid;gap:22px;margin-top:36px}
+  .contacto dt{font-size:14px;color:var(--gris)}
+  .contacto dd{font-size:19px;font-weight:500}
+  .tarjeta{background:var(--lavanda);border-radius:28px;padding:40px}
+  .tarjeta h3{font-family:var(--serif);font-weight:500;font-size:30px;line-height:1.2;color:var(--berenjena);margin-bottom:12px}
+  .tarjeta p{color:var(--gris);margin-bottom:28px}
+
+  .pie{background:var(--tinta);color:#A79FB8;font-size:14px;padding:28px 0}
+  .pie .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  .flotante{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wpp);display:grid;place-items:center;box-shadow:0 8px 24px rgba(51,38,77,.3)}
+  .flotante svg{width:30px;height:30px;fill:#fff}
+
+  @media (max-width:860px){
+    .nav ul{display:none}
+    .marca small{display:none}
+    .nav .btn-chico{padding:9px 14px;font-size:14px}
+    .hero{padding:40px 0 72px}
+    .hero .wrap{grid-template-columns:1fr;gap:48px}
+    .circulo{width:240px}
+    section{padding:72px 0}
+    .temas,.pasos{grid-template-columns:1fr}
+    .pasos{gap:32px}
+    .sobre .wrap,.contacto .wrap{grid-template-columns:1fr;gap:36px}
+    .citas{grid-template-columns:1fr}
+    .resenas{padding:72px 0}
+    .nota{text-align:left}
+    .foto{aspect-ratio:1;max-width:320px}
+    .nota{font-size:72px}
+    .tarjeta{padding:28px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .circulo::before,.circulo::after,.circulo span i{animation:none}
+    .circulo span i+i{display:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="boceto"><strong>Boceto de propuesta</strong> preparado por Mantisnet para Renovar Salud Mental. Fotos y textos son provisorios.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="marca" href="#" aria-label="Renovar Salud Mental, inicio">
+      <svg viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="17" fill="#33264D"/>
+        <path d="M17 26 V15" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        <path d="M17 17 C17 11 21 8 26 8 C26 13 22 17 17 17Z" fill="#7FA889"/>
+        <path d="M17 20 C17 15.5 13.5 13 9 13 C9 17.5 12.5 20 17 20Z" fill="#B9D6C0"/>
+      </svg>
+      <span><b>Renovar</b><small>Salud mental · Lic. Belén Kachuk</small></span>
+    </a>
+    <ul>
+      <li><a href="#temas">En qué te ayudo</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#empezar">Cómo empezar</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn btn-wpp btn-chico" href="https://wa.me/5491136662690?text=Hola%20Bel%C3%A9n%2C%20quisiera%20agendar%20una%20consulta." target="_blank" rel="noopener">Agendar consulta</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Un espacio seguro para hablar de lo que te pasa.</h1>
+      <p>Terapia psicológica para la ansiedad, el estrés, las crisis personales y los vínculos, con la Lic. Belén Kachuk, en San Isidro u online.</p>
+      <div class="acciones">
+        <a class="btn btn-wpp" href="https://wa.me/5491136662690?text=Hola%20Bel%C3%A9n%2C%20quisiera%20agendar%20una%20consulta." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+          Agendar consulta por WhatsApp
+        </a>
+        <a class="btn btn-sec" href="#sobre">Conocer a Belén</a>
+      </div>
+      <div class="modalidad"><span>Presencial en San Isidro</span><span>Online</span><span>Confidencial</span></div>
+    </div>
+
+    <div class="respira">
+      <div class="circulo" aria-hidden="true"><span><i>Inhalá</i><i>Exhalá</i></span></div>
+      <p>Tomate un momento: respirá al ritmo del círculo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="temas">
+  <div class="wrap">
+    <h2>En qué te puedo ayudar</h2>
+    <p class="intro">Cada proceso es distinto. La terapia se adapta a lo que estás viviendo y a tus tiempos.</p>
+    <div class="temas">
+      <div><h3>Ansiedad</h3><p>Herramientas para entender lo que sentís y recuperar la calma en el día a día.</p></div>
+      <div><h3>Estrés</h3><p>Para cuando el trabajo, el estudio o las exigencias te desbordan.</p></div>
+      <div><h3>Crisis personales</h3><p>Separaciones, pérdidas, cambios o momentos en los que no sabés por dónde seguir.</p></div>
+      <div><h3>Relaciones y vínculos</h3><p>Pareja, familia, amistades y trabajo: aprender a vincularte de una forma más sana.</p></div>
+      <div><h3>Autoconocimiento</h3><p>Un espacio para conocerte mejor y crecer en todas las áreas de tu vida.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div class="foto">Foto de Belén</div>
+    <div>
+      <h2>Hola, soy Belén</h2>
+      <p>Soy psicóloga y fundadora de Renovar Salud Mental. Mi compromiso es brindarte un espacio seguro y confidencial para tu bienestar emocional.</p>
+      <p>Ofrezco una terapia adaptada a tus necesidades, para que desarrolles herramientas para afrontar el estrés, la ansiedad y las crisis personales, y para mejorar tus relaciones. Mi objetivo es acompañarte en tu proceso de autoconocimiento y crecimiento.</p>
+      <div class="firma"><b>Lic. Belén Kachuk</b>Psicóloga · [Matrícula]</div>
+    </div>
+  </div>
+</section>
+
+<section id="empezar">
+  <div class="wrap">
+    <h2>Cómo empezar</h2>
+    <div class="pasos">
+      <div><h3>Escribime</h3><p>Mandame un mensaje por WhatsApp. Respondo de forma personal y confidencial.</p></div>
+      <div><h3>Primera entrevista</h3><p>Nos conocemos, me contás qué te trae y vemos cómo puedo ayudarte.</p></div>
+      <div><h3>Armamos el plan</h3><p>Acordamos la frecuencia de las sesiones y si preferís hacerlas online o presenciales.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="resenas">
+  <div class="wrap">
+    <div class="cabecera">
+      <h2>Lo que dicen sus pacientes</h2>
+      <div class="nota">5,0<small>en Google, 8 reseñas</small></div>
+    </div>
+    <div class="citas">
+      <blockquote><p>"Desde el primer momento me hizo sentir escuchada, comprendida y acompañada. Tiene una enorme capacidad para transmitir tranquilidad y para escuchar sin juzgar."</p><footer>Andrea J.</footer></blockquote>
+      <blockquote><p>"Sabe escuchar con mucha atención y empatía. Valoro especialmente su manera de acompañar, sin juzgar y respetando los tiempos de cada persona."</p><footer>Nicolás B.</footer></blockquote>
+      <blockquote><p>"Gracias a su acompañamiento pude empezar a sentirme muchísimo mejor e incorporar herramientas que me ayudan a transitar cada día de una manera diferente."</p><footer>Laura R.</footer></blockquote>
+    </div>
+  </div>
+</div>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div>
+      <h2>Consultorio y contacto</h2>
+      <dl>
+        <div><dt>Consultorio</dt><dd>Martín y Omar 351, San Isidro</dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5491136662690" target="_blank" rel="noopener">11 3666-2690</a></dd></div>
+        <div><dt>Modalidad</dt><dd>Presencial y online</dd></div>
+        <div><dt>Horario</dt><dd>[Días y horarios] · hasta las 21 h</dd></div>
+        <div><dt>Obras sociales</dt><dd>[Obras sociales o reintegros]</dd></div>
+      </dl>
+    </div>
+    <div class="tarjeta">
+      <h3>Dar el primer paso es lo más difícil. Te acompaño.</h3>
+      <p>Escribime y coordinamos una primera consulta, online o presencial.</p>
+      <a class="btn btn-wpp" href="https://wa.me/5491136662690?text=Hola%20Bel%C3%A9n%2C%20quisiera%20agendar%20una%20consulta." target="_blank" rel="noopener">Agendar consulta por WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="pie">
+  <div class="wrap"><span>Renovar Salud Mental · Lic. Belén Kachuk</span><span>Sitio diseñado por Mantisnet</span></div>
+</div>
+
+<a class="flotante" href="https://wa.me/5491136662690?text=Hola%20Bel%C3%A9n%2C%20quisiera%20agendar%20una%20consulta." target="_blank" rel="noopener" aria-label="Agendar consulta por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+</body>
+</html>
